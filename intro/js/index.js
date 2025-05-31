@@ -62,3 +62,17 @@ console.log(drink.info());
 
 const drink2 = new Drink2('Sprite');
 console.log(drink2.info());
+
+class Beer extends Drink {
+
+    constructor(name, alcohol) {
+        super(name)
+        this.alcohol = alcohol
+    }
+    info() {
+        return `${super.info()} ${this.alcohol}`
+    }
+}
+
+const beer = new Beer('Brahma', 4.5);
+console.log(beer.info())

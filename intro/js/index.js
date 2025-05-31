@@ -38,3 +38,27 @@ const numbers = [11, 2, 5, 6, 1, 21, 2]
 const total = numbers.reduce((prev, actual) => prev + actual, 0)
 console.log(total);
 
+//Programacion orientada a objetos
+//class
+class Drink {
+    constructor(name) {
+        this.name = name
+    }
+    info() {
+        return `La bebida es ${this.name}`
+    }
+}
+
+//functional
+function Drink2(name) {
+    this.name = name,
+        this.info = function () {
+            return `La bebida es ${this.name}`
+        }
+}
+
+const drink = new Drink('Coca cola');
+console.log(drink.info());
+
+const drink2 = new Drink2('Sprite');
+console.log(drink2.info());

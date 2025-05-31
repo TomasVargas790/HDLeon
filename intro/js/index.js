@@ -26,4 +26,15 @@ operation((a, b) => {
 }, 10, 20)
 
 //foreach
-const names = ['Hector','Juan','Pablo']
+const names = ['Hector', 'Juan', 'Pablo', 'Ana']
+names.forEach((n) => console.log(n));
+names.forEach((n) => console.log(n.toUpperCase()));
+console.log(names);
+names.sort()
+console.log(names);
+
+//reduce
+const numbers = [11, 2, 5, 6, 1, 21, 2]
+const total = numbers.reduce((prev, actual) => prev + actual, 0)
+console.log(total);
+
